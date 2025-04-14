@@ -3,7 +3,9 @@ import PageHome from '@/views/PageHome.vue'
 import BestTopics from '@/views/board/BestTopics.vue';
 import BoardList from '@/views/board/BoardList.vue'
 import BoardWrite from "@/views/board/BoardWrite.vue";
-import BoardDetail from '@/views/board/BoardDetail.vue'
+import BoardDetail from '@/views/board/BoardDetail.vue';
+import UserRegister from '@/views/UserRegister.vue';
+import UserLogin from '@/views/UserLogin.vue'
 
 const routes = [
     {
@@ -44,6 +46,18 @@ const routes = [
         name: 'BoardDetail',
         component: BoardDetail,
         meta: { title: ' '}
+    },
+    {
+        path: '/register',
+        name: 'UserRegister',
+        component: UserRegister,
+        meta: { title: '' }
+    },
+    {
+        path: '/login',
+        name: 'UserLogin',
+        component: UserLogin,
+        meta: { title: '로그인하기' }
     }
 
 ]
